@@ -29,6 +29,7 @@ body {
 	height: 70rem;
 	background: linear-gradient(to right, #dfd7ff, #c5b7ff);
 	border-radius: 1rem;
+	margin: 0 2rem;
 }
 /* SCROLL BAR */
 .toppicks__list::-webkit-scrollbar-track,
@@ -57,6 +58,7 @@ html::-webkit-scrollbar-thumb {
 	text-transform: capitalize;
 	color: var(--text-color);
 	font-size: 2rem;
+	margin: 0 2rem;
 }
 #header,
 .header__nav--left,
