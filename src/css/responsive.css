@@ -1,2 +1,200 @@
-@media only screen and (max-width = 1050px) {
+/* PC */
+@media (min-width: 64em) {
+}
+/* PC low resolution--WIDE-L */
+@media (max-width: 77.4375em) {
+	.menu__power {
+		margin-top: 34.5rem;
+	}
+	#main {
+		margin-right: auto;
+		padding-bottom: 21rem;
+	}
+	#wapper .header__sidebar--bottom {
+		border-radius: 1rem;
+		top: 60rem;
+		display: flex;
+		left: -41.3rem;
+		right: auto;
+		width: 62.6rem;
+		padding: 0;
+		background-color: #efebff;
+	}
+	#wapper .sidebar__mycards {
+		flex: 1;
+		background-color: var(--white-color);
+		border-radius: 0.5rem;
+	}
+	.sidebar__mycards h4,
+	.mycards__infor {
+		width: 17rem;
+		margin-left: 1.5rem;
+	}
+	.mycards__balance span {
+		font-size: 2rem;
+	}
+	.mycards__interest {
+		font-size: 1rem;
+	}
+	.mycards__infor {
+		padding: 0.5rem 1rem;
+	}
+	.mycards__interest span:last-child {
+		padding: 0.5rem 1rem;
+	}
+	.mycards__profit h6,
+	.mycards__balance h6 {
+		padding: 0.5rem 0.4rem;
+	}
+	#wapper .sidebar__toppicks {
+		flex: 2;
+		margin-left: 2rem;
+		background-color: var(--white-color);
+		border-radius: 0.5rem;
+		padding: 0 1rem;
+	}
+	.toppicks__title {
+		margin: 0;
+	}
+	.toppicks__list {
+		height: 13.5rem;
+		display: flex;
+		flex-wrap: wrap;
+		overflow-y: auto;
+	}
+	.toppicks__item {
+		width: 17rem;
+		margin-right: 1rem;
+	}
+	.mycards__slide {
+		display: none;
+	}
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.7375em) {
+	#wapper .header__sidebar--bottom {
+		left: -39.7rem;
+		width: 61rem;
+		top: 61rem;
+	}
+	#wapper .sidebar__toppicks {
+		margin-left: 3rem;
+	}
+	.statistic__item {
+		margin-bottom: 1.5rem;
+	}
+
+	.statistic__sub {
+		display: none;
+	}
+	.owned__about {
+		font-size: 1.2rem;
+	}
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+	body {
+		height: auto;
+		padding: 2rem 0;
+		border-radius: 0;
+	}
+	#main {
+		padding-bottom: 43rem;
+	}
+	.statistic__content {
+		margin: 0;
+		margin-top: 2rem;
+	}
+	.banner__investment {
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+	.banner__marketplace > img {
+		width: 100%;
+	}
+	.marketplace__rating {
+		margin: 1rem;
+	}
+	.marketplace__rating h6 {
+		font-size: 1.5rem;
+	}
+	.marketplace__about > h6 {
+		font-size: 2rem;
+	}
+	.marketplace__rate > h6,
+	.marketplace__rate > span,
+	.marketplace__rate > i {
+		font-size: 1.5rem;
+	}
+	#wapper .header__sidebar--bottom,
+	.main__statistic,
+	.main__banner {
+		display: block;
+	}
+	#wapper .header__sidebar--bottom {
+		top: 125rem;
+		left: -30rem;
+		width: 51rem;
+	}
+	.mycards__infor {
+		width: 48rem;
+		margin-bottom: 2rem;
+	}
+	#wapper .sidebar__toppicks {
+		margin: auto;
+	}
+	.menu__power {
+		margin-top: 112rem;
+	}
+	#wapper .sidebar__mycards {
+		padding-bottom: 1rem;
+		margin-bottom: 2rem;
+	}
+}
+/* SMALL SMART PHONE 375PX */
+@media (max-width: 39.0625em) {
+	body {
+		/* overflow: hidden; */
+	}
+	#main {
+		margin-left: 0;
+		padding-bottom: 3rem;
+	}
+	#wapper .header__sidebar--bottom {
+		display: none;
+	}
+	.nav__menu--short {
+		display: none;
+	}
+	.mycards__infor {
+		width: 43rem;
+	}
+	.banner__marketplace > img {
+	}
+	#header {
+		padding: 0;
+	}
+	.nav__account {
+		padding: 0;
+	}
+	#content__distribution {
+		display: none;
+	}
+}
+@media (max-width: 321px) {
+	body,
+	#main {
+		padding: 0;
+	}
+	.nav__account {
+		padding: 0;
+	}
+	#content__distribution {
+		display: none;
+	}
+	.banner__marketplace {
+		padding-top: 1rem;
+	}
 }

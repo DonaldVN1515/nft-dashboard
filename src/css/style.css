@@ -21,15 +21,14 @@ body,
 }
 html {
 	font-size: 62.5%;
-	font-family: "ROboto", sans-serif;
+	font-family: 'ROboto', sans-serif;
 	background-color: var(--background-color);
 }
 body {
-	width: 140rem;
-	height: 70rem;
+	width: 100vw;
+	height: 100vh;
 	background: linear-gradient(to right, #dfd7ff, #c5b7ff);
 	border-radius: 1rem;
-	margin: 0 2rem;
 }
 /* SCROLL BAR */
 .toppicks__list::-webkit-scrollbar-track,
@@ -41,6 +40,7 @@ html::-webkit-scrollbar-track {
 .toppicks__list::-webkit-scrollbar,
 html::-webkit-scrollbar {
 	width: 0.6rem;
+	height: 0.6rem;
 	background-color: var(--background-color);
 }
 .toppicks__list::-webkit-scrollbar-thumb,
@@ -51,8 +51,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 #wapper {
-	width: 100rem;
-	height: 60rem;
 	background-color: var(--white-color);
 	border-radius: 0.5rem;
 	text-transform: capitalize;
@@ -115,7 +113,7 @@ html::-webkit-scrollbar-thumb {
 	position: relative;
 }
 .menu__item a:hover::before {
-	content: "";
+	content: '';
 	position: absolute;
 	height: 100%;
 	width: 0.4rem;
@@ -137,6 +135,7 @@ html::-webkit-scrollbar-thumb {
 	color: var(--white-color);
 	cursor: default;
 	display: none;
+	z-index: 99;
 }
 .menu__item:hover .menu__infor {
 	display: flex;
@@ -161,7 +160,7 @@ html::-webkit-scrollbar-thumb {
 	font-weight: 400;
 }
 .menu__power {
-	margin-top: 9rem;
+	margin-top: 15rem;
 }
 .menu__power:hover i {
 	color: var(--red-color);
@@ -171,7 +170,7 @@ html::-webkit-scrollbar-thumb {
 	position: relative;
 }
 .nav__notify::after {
-	content: "";
+	content: '';
 	width: 0.6rem;
 	height: 0.6rem;
 	background-color: var(--red-color);
@@ -502,7 +501,7 @@ html::-webkit-scrollbar-thumb {
 	position: relative;
 }
 .investment__highchart > div::before {
-	content: "";
+	content: '';
 	position: absolute;
 	bottom: 0;
 	left: -0.5rem;
@@ -557,13 +556,15 @@ html::-webkit-scrollbar-thumb {
 	font-size: 1.5rem;
 }
 .owned__infor {
+	height: 24rem;
+	overflow-y: auto;
 }
 .owned__item {
 	list-style: none;
 	padding: 0.8rem;
 	border-radius: 0.5rem;
 	background-color: var(--white-color);
-	margin-bottom: 1rem;
+	margin-bottom: 0.8rem;
 }
 .owned__name > i,
 .owned__about > span {
